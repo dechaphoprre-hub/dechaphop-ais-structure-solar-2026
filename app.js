@@ -254,9 +254,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load and Apply Theme from localStorage
     initThemeSwitcher();
 
-    // Load and Apply UI Style from localStorage
-    initBgStyleSwitcher();
-
     // Set initial last updated text
     lastUpdatedDate.textContent = typeof LAST_UPDATED !== 'undefined' ? LAST_UPDATED : 'Unknown Update';
 
@@ -379,65 +376,31 @@ function setupEventListeners() {
 
 // Color Theme Switcher Logic
 function initThemeSwitcher() {
-    const savedTheme = localStorage.getItem('solar-theme') || 'orange';
+    const savedTheme = localStorage.getItem('solar-theme') || 'midnight';
     applyTheme(savedTheme);
 
     const themeDots = document.querySelectorAll('.theme-dot');
     themeDots.forEach(dot => {
         dot.addEventListener('click', () => {
-            themeDots.forEach(d => d.classList.remove('active'));
-            dot.classList.add('active');
-            
             const theme = dot.getAttribute('data-theme');
             applyTheme(theme);
         });
     });
 }
 
-// Apply theme class to body and preserve state
+// Apply theme attribute to documentElement and preserve state
 function applyTheme(theme) {
-    // Selectively remove only the theme-* classes so UI style classes are not wiped out
-    document.body.classList.remove('theme-orange', 'theme-green', 'theme-teal', 'theme-violet');
-    document.body.classList.add(`theme-${theme}`);
+    if (theme === 'midnight') {
+        document.documentElement.removeAttribute('data-theme');
+    } else {
+        document.documentElement.setAttribute('data-theme', theme);
+    }
     localStorage.setItem('solar-theme', theme);
     
     // Set matching dot to active visually
-    const dot = document.querySelector(`.theme-dot[data-theme="${theme}"]`);
-    if (dot) {
-        document.querySelectorAll('.theme-dot').forEach(d => d.classList.remove('active'));
-        dot.classList.add('active');
-    }
-}
-
-// UI Background Style Switcher Logic
-function initBgStyleSwitcher() {
-    const savedStyle = localStorage.getItem('solar-bg-style') || 'saas';
-    applyStyle(savedStyle);
-
-    const styleBtns = document.querySelectorAll('.style-btn');
-    styleBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const style = btn.getAttribute('data-style');
-            applyStyle(style);
-        });
-    });
-}
-
-// Apply background style class to body and preserve state
-function applyStyle(style) {
-    // Selectively remove only the style-* classes so accent theme classes remain untouched
-    document.body.classList.remove('style-saas', 'style-claude', 'style-google');
-    document.body.classList.add(`style-${style}`);
-    localStorage.setItem('solar-bg-style', style);
-    
-    // Set matching button to active visually
-    const styleBtns = document.querySelectorAll('.style-btn');
-    styleBtns.forEach(btn => {
-        if (btn.getAttribute('data-style') === style) {
-            btn.classList.add('active');
-        } else {
-            btn.classList.remove('active');
-        }
+    const themeDots = document.querySelectorAll('.theme-dot');
+    themeDots.forEach(d => {
+        d.classList.toggle('active', d.getAttribute('data-theme') === theme);
     });
 }
 
