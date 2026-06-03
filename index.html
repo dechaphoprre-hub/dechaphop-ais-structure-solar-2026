@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIS Structure Solar 2026</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-orange style-saas">
+    <div class="app-container">
+        <!-- Header Banner -->
+        <header class="app-header">
+            <div class="logo-area">
+                <img src="logo.png" alt="ZTE Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>AIS Structure Solar 2026</h1>
+                    <span>Drawing Content Portal</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <!-- UI Style Switcher -->
+                <div class="theme-switcher-panel">
+                    <span class="switcher-label">UI Style:</span>
+                    <div class="style-buttons-group">
+                        <button class="style-btn active" data-style="saas" title="Modern SaaS">SaaS</button>
+                        <button class="style-btn" data-style="claude" title="Claude Style">Claude</button>
+                        <button class="style-btn" data-style="google" title="Google Style">Google</button>
+                    </div>
+                </div>
+                <!-- Premium Color Theme Switcher -->
+                <div class="theme-switcher-panel">
+                    <span class="switcher-label">Theme Color:</span>
+                    <div class="theme-dots-group">
+                        <button class="theme-dot active" data-theme="orange" style="--dot-color: #ff7043;" title="Solar Gold"></button>
+                        <button class="theme-dot" data-theme="green" style="--dot-color: #00e676;" title="AIS Green"></button>
+                        <button class="theme-dot" data-theme="teal" style="--dot-color: #06b6d4;" title="Electric Teal"></button>
+                        <button class="theme-dot" data-theme="violet" style="--dot-color: #8b5cf6;" title="Cyber Indigo"></button>
+                    </div>
+                </div>
+                <span class="badge-tag">v2.4 Flagship</span>
+            </div>
+        </header>
+
+        <!-- Stats Dashboard -->
+        <section class="stats-dashboard">
+            <div class="stat-card" id="stat-total">
+                <div class="stat-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value">0</span>
+                    <span class="stat-label">Drawings</span>
+                </div>
+            </div>
+            <div class="stat-card" id="stat-categories">
+                <div class="stat-icon"><i class="fa-solid fa-folder-tree"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value">0</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+            </div>
+            <div class="stat-card" id="stat-vendors">
+                <div class="stat-icon"><i class="fa-solid fa-industry"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value">0</span>
+                    <span class="stat-label">Vendors</span>
+                </div>
+            </div>
+            <div class="stat-card" id="stat-types">
+                <div class="stat-icon"><i class="fa-solid fa-cubes"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value">0</span>
+                    <span class="stat-label">Structure Types</span>
+                </div>
+            </div>
+            <div class="stat-card" id="stat-favorites" style="cursor: pointer;" title="Show Bookmarked Favorites">
+                <div class="stat-icon" style="color: #ffb703;"><i class="fa-solid fa-star"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value" id="stat-favorites-val">0</span>
+                    <span class="stat-label">Favorites</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Permanent Open Global Search Bar -->
+        <section class="global-search-container">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="global-search-input" placeholder="Search by Structure Code, Material Code, Vendor, or Structure Type...">
+                <button id="clear-global-search" class="clear-btn" style="display: none;"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </section>
+
+        <!-- Step-by-Step Navigation Wizard -->
+        <section class="wizard-container" id="wizard-container">
+            <div class="wizard-steps-header">
+                <div class="wizard-step active" id="step-tab-1" data-step="1">
+                    <div class="step-indicator">
+                        <span class="step-num">1</span>
+                        <i class="fa-solid fa-circle-check completed-icon"></i>
+                    </div>
+                    <div class="step-info">
+                        <span class="step-title">Category</span>
+                        <span class="step-selected-val" id="selected-cat-lbl">Not Selected</span>
+                    </div>
+                </div>
+                <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="wizard-step disabled" id="step-tab-2" data-step="2">
+                    <div class="step-indicator">
+                        <span class="step-num">2</span>
+                        <i class="fa-solid fa-circle-check completed-icon"></i>
+                    </div>
+                    <div class="step-info">
+                        <span class="step-title">Vendor</span>
+                        <span class="step-selected-val" id="selected-vendor-lbl">Not Selected</span>
+                    </div>
+                </div>
+                <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="wizard-step disabled" id="step-tab-3" data-step="3">
+                    <div class="step-indicator">
+                        <span class="step-num">3</span>
+                        <i class="fa-solid fa-circle-check completed-icon"></i>
+                    </div>
+                    <div class="step-info">
+                        <span class="step-title">Structure Type</span>
+                        <span class="step-selected-val" id="selected-type-lbl">Not Selected</span>
+                    </div>
+                </div>
+                <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="wizard-step disabled" id="step-tab-4" data-step="4">
+                    <div class="step-indicator">
+                        <span class="step-num">4</span>
+                        <i class="fa-solid fa-circle-check completed-icon"></i>
+                    </div>
+                    <div class="step-info">
+                        <span class="step-title">Drawing List</span>
+                        <span class="step-selected-val" id="selected-count-lbl">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic content options for current step -->
+            <div class="wizard-body">
+                <div class="wizard-step-panel" id="panel-step-1">
+                    <div class="panel-header">
+                        <h2><i class="fa-solid fa-folder-tree"></i> Step 1: Select Main Category</h2>
+                        <p>Select a category below or search in the bar above</p>
+                    </div>
+                    <div class="option-grid" id="cat-options-list">
+                        <!-- Dynamic categories pills cards -->
+                    </div>
+                </div>
+
+                <div class="wizard-step-panel" id="panel-step-2" style="display: none;">
+                    <div class="panel-header">
+                        <div class="panel-header-title">
+                            <h2><i class="fa-solid fa-industry"></i> Step 2: Select Vendor</h2>
+                            <button class="back-btn" data-back-to="1"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                        </div>
+                        <p>Showing vendors matching the selected category</p>
+                    </div>
+                    <div class="option-grid" id="vendor-options-list">
+                        <!-- Dynamic vendors list -->
+                    </div>
+                </div>
+
+                <div class="wizard-step-panel" id="panel-step-3" style="display: none;">
+                    <div class="panel-header">
+                        <div class="panel-header-title">
+                            <h2><i class="fa-solid fa-cubes"></i> Step 3: Select Structure Type</h2>
+                            <button class="back-btn" data-back-to="2"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                        </div>
+                        <p>Showing structure types matching the selected category and vendor</p>
+                    </div>
+                    <div class="option-grid" id="type-options-list">
+                        <!-- Dynamic structure types list -->
+                    </div>
+                </div>
+
+                <div class="wizard-step-panel" id="panel-step-4" style="display: none;">
+                    <div class="panel-header">
+                        <div class="panel-header-title">
+                            <h2><i class="fa-solid fa-file-pdf"></i> Step 4: Drawing List</h2>
+                            <div class="btn-group">
+                                <button class="back-btn" data-back-to="3"><i class="fa-solid fa-arrow-left"></i> Back to Step 3</button>
+                                <button class="reset-wizard-btn"><i class="fa-solid fa-arrows-rotate"></i> Reset Flow</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Drawing Table-like Compact List -->
+                    <div class="drawings-list-container">
+                        <div class="drawings-list-header">
+                            <span class="col-cat">Category</span>
+                            <span class="col-material">Material Code</span>
+                            <span class="col-code">Structure Code</span>
+                            <span class="col-details">Vendor & Structure Type</span>
+                            <span class="col-actions">Actions</span>
+                        </div>
+                        <div class="drawings-list" id="drawings-list">
+                            <!-- Dynamic drawing rows -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Direct Search Results View -->
+        <section class="bypass-search-panel" id="direct-search-results-panel" style="display: none;">
+            <div class="panel-header-inline">
+                <h3><i class="fa-solid fa-magnifying-glass"></i> Direct Search Results</h3>
+                <button id="cancel-search-btn" class="close-panel-btn"><i class="fa-solid fa-xmark"></i> Clear Search</button>
+            </div>
+            
+            <div class="results-meta">
+                <span id="results-count">Found 0 items</span>
+            </div>
+            
+            <!-- Direct Search Table-like Compact List -->
+            <div class="drawings-list-container">
+                <div class="drawings-list-header">
+                    <span class="col-cat">Category</span>
+                    <span class="col-material">Material Code</span>
+                    <span class="col-code">Structure Code</span>
+                    <span class="col-details">Vendor & Structure Type</span>
+                    <span class="col-actions">Actions</span>
+                </div>
+                <div class="drawings-list" id="direct-drawings-list">
+                    <!-- Direct search drawing rows -->
+                </div>
+            </div>
+        </section>
+
+        <!-- No Results Found -->
+        <div class="no-results" id="no-results" style="display: none;">
+            <i class="fa-solid fa-ban"></i>
+            <h3>No drawings found matching the criteria</h3>
+            <p>Please try a different query or clear the search bar to resume the step-by-step wizard.</p>
+            <button id="clear-search-btn-no-res" class="reset-btn"><i class="fa-solid fa-arrows-rotate"></i> Clear Filters</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>© 2026 AIS Structure Solar 2026. All Rights Reserved.</p>
+            <p class="update-time">Last Database Update: <span id="last-updated-date">-</span></p>
+        </footer>
+    </div>
+
+    <!-- Inline PDF Viewer Modal Overlay -->
+    <div id="pdf-modal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-info">
+                    <h3 id="modal-drawing-title">Drawing Name</h3>
+                    <span id="modal-material-title">Material Code: -</span>
+                </div>
+                <button id="close-modal-btn" class="modal-close-btn" title="Close Preview"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <iframe id="pdf-iframe" src="" frameborder="0" allow="autoplay"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Toast Notification for copying -->
+    <div id="toast" class="toast">Copied to clipboard!</div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

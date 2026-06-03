@@ -1,0 +1,679 @@
+// Auto-generated drawing list data
+// Generated on: 2026-06-03 18:49:11
+
+const LAST_UPDATED = "2026-06-03 18:49:11";
+
+const DRAWING_DATA = [
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Huawei 2020",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-HW.pdf",
+    "Material Code": "81301500168",
+    "Google Drive File URL": "1yNq4z9_Zf-EVsKqtNbuQ5v4W9xOfnsT3"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Hatari",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-C-Hatari-1-Slab.pdf",
+    "Material Code": "81301500160",
+    "Google Drive File URL": "1UUDUiS7ANbUYhLk3me_8oDn6pMG2jfYT"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Hatari",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-C-Hatari-1-Soil.pdf",
+    "Material Code": "81301500256",
+    "Google Drive File URL": "1NbIq090KFG_wrYiD-U0-e4P5TCAQYE0U"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Hatari",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-C-Hatari-2-Slab.pdf",
+    "Material Code": "81301500257",
+    "Google Drive File URL": "1r8JLhcKS6rCZbfiUy66nXE8VJA6kX_F9"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Hatari",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-C-Hatari-2-Soil.pdf",
+    "Material Code": "81301500258",
+    "Google Drive File URL": "1kBKgOelz0qlK5AEENq8V6xkgVn17rgte"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "A-Plus",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-C-Aplus-Slab.pdf",
+    "Material Code": "81301500173",
+    "Google Drive File URL": "1geEYmQI6fINaxQkXCKeWmB_3CZB2m8bW"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Transpower",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-C-Transpower-H-Slab.pdf",
+    "Material Code": "New request-2",
+    "Google Drive File URL": "10In5XjyZlfD15fBecD3lrLwj9hkpWNXn"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Transpower",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-C-Transpower-H-Soil.pdf",
+    "Material Code": "New request-3",
+    "Google Drive File URL": "11K1f04ZLijvHhHieef3OME7LgRV2a-rB"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Transpower",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-C-Transpower-V-Slab.pdf",
+    "Material Code": "New request-4",
+    "Google Drive File URL": "100nbKdr6FIAClLOncY0C0aIM0h0AG2d9"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Transpower",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-C-Transpower-V-Soil.pdf",
+    "Material Code": "New request-5",
+    "Google Drive File URL": "172DCyPSuXJYpT4Ws7FigO5ENDNIrmTPG"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Huawei 2020",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E1-G2L-HW.pdf",
+    "Material Code": "81301500166",
+    "Google Drive File URL": "18XWF2f2vyKhemprwF-_oVq6AqoFMxsri"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Qualia",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E1-G2L-C-Qualia.pdf",
+    "Material Code": "81301500167",
+    "Google Drive File URL": "1mXHFwhsW8N4APfwTeo899MHBAw8xNHSR"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Interlink",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E1-G2L-C-ITEL-Slab.pdf",
+    "Material Code": "81301500262",
+    "Google Drive File URL": "1LP9R6KvNAS8nKTbS4KHMVgqnekpLUv-v"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Interlink",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E1-G1L-MRV-3PV-4PV_Soil.pdf",
+    "Material Code": "81301500165",
+    "Google Drive File URL": "136Dmht6m_OF3coDAYRVAB1xBq9ZWqRiO"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "A-Plus",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E1-G2L-C-Aplus-Soil.pdf",
+    "Material Code": "81301500171",
+    "Google Drive File URL": "1LQSZp8WBfiz8GKZHyjP7E1BWAclDvbr1"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "A-Plus",
+    "Structure Type": "1-Layer",
+    "Structure Code": "E1-T1-APlus.pdf",
+    "Material Code": "81301500239",
+    "Google Drive File URL": "13drwIPa8sG3i1ILXjSrA0O_EVP67SN0l"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "A-Plus",
+    "Structure Type": "2-Layer (4+2)",
+    "Structure Code": "E1-T2-Aplus.pdf",
+    "Material Code": "81301500244",
+    "Google Drive File URL": "1tAi1YK8aU1n1DABUVJK1cOugzhNYQdf9"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E2",
+    "Vendor": "A-Plus",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E2-G2L-C-Aplus-Slab.pdf",
+    "Material Code": "81301500261",
+    "Google Drive File URL": "1ULlDfXUrJykZV3D-Hcj0CExSMgAW1FoH"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E2",
+    "Vendor": "Qualia",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E2-G2L-C-Qualia-Slab.pdf",
+    "Material Code": "81301500260",
+    "Google Drive File URL": "1QZKVeZP4k0ea250yEbvx2tdnWi_KFcyP"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E2",
+    "Vendor": "Qualia",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E2-G2L-C-Qualia-Soil.pdf",
+    "Material Code": "81301500253",
+    "Google Drive File URL": "18igEpbLm_ONenrCMJadgAzpFPZbGhoUe"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E2",
+    "Vendor": "Interlink",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E2-G2L-C-ITEL-Slab.pdf",
+    "Material Code": "New request-17",
+    "Google Drive File URL": "1jAeuS5W1OL07JMYI6w25ehOqjlWCk226"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E2",
+    "Vendor": "A-Plus",
+    "Structure Type": "2-Layer (6+2)",
+    "Structure Code": "E2-T2-Aplus-1.pdf",
+    "Material Code": "New request-18",
+    "Google Drive File URL": "1Tku1Syx86WBxUmLAVBPV1xPWbWQG8rsv"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E2",
+    "Vendor": "A-Plus",
+    "Structure Type": "2-Layer (6+2)",
+    "Structure Code": "E2-T2-Aplus-2.pdf",
+    "Material Code": "New request-19",
+    "Google Drive File URL": "-"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N1",
+    "Vendor": "TCC",
+    "Structure Type": "1-Leg",
+    "Structure Code": "N1-G1L-Soil.pdf",
+    "Material Code": "81301500176",
+    "Google Drive File URL": "1-IeVCm7MaL17VBfeMXbmz-jABWUCj8qu"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N1",
+    "Vendor": "TCC",
+    "Structure Type": "1-Leg",
+    "Structure Code": "N1-G1L-Slab.pdf",
+    "Material Code": "81301500232",
+    "Google Drive File URL": "1hm_iIRFcO_CmXTF15AmwqXIwVAkQE4n2"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N1",
+    "Vendor": "TCC",
+    "Structure Type": "1-Layer (L-Leg)",
+    "Structure Code": "N1-T1-L.pdf",
+    "Material Code": "81301500188",
+    "Google Drive File URL": "1pP2-MjeVOrGTnnRyQwaa49kvZqkAd9Ym"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N1",
+    "Vendor": "TCC",
+    "Structure Type": "1-Layer (Pipe-Leg)",
+    "Structure Code": "N1-T1-P.pdf",
+    "Material Code": "81301500192",
+    "Google Drive File URL": "1TrCr793kbOCo5707Pxb0TYkYrBuWIGo3"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N2",
+    "Vendor": "TCC",
+    "Structure Type": "1-Leg",
+    "Structure Code": "N2-G1L-Soil.pdf",
+    "Material Code": "81301500230",
+    "Google Drive File URL": "1ICZpRmz1GqD-c6fmdk_co7a9KyhWU14J"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N2",
+    "Vendor": "TCC",
+    "Structure Type": "1-Layer (L-Leg)",
+    "Structure Code": "N2-T1-L.pdf",
+    "Material Code": "81301500199",
+    "Google Drive File URL": "1JGmR7t3sswrHFnt4SrQ422zPR7LPfMJa"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N2",
+    "Vendor": "TCC",
+    "Structure Type": "1-Layer (Pipe-Leg)",
+    "Structure Code": "N2-T1-P.pdf",
+    "Material Code": "81301500190",
+    "Google Drive File URL": "1KCFLQphtGjUX8GKXdkbn8XZvSWYm-DXv"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N2",
+    "Vendor": "TCC",
+    "Structure Type": "Container",
+    "Structure Code": "N2-CR-Corner Box.pdf",
+    "Material Code": "81301500235",
+    "Google Drive File URL": "19p4ljUq-N0pc4ZfrZXFdiW257gu5hm7m"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N2",
+    "Vendor": "TCC",
+    "Structure Type": "Container",
+    "Structure Code": "N2-CR-Transfer Beam.pdf",
+    "Material Code": "81301500225",
+    "Google Drive File URL": "1ZUXB96PY2hQLi5ZYqUJ2FnJqQNNqI6Fb"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N3",
+    "Vendor": "TCC",
+    "Structure Type": "1-Leg",
+    "Structure Code": "N3-G1L-Soil.pdf",
+    "Material Code": "81301500178",
+    "Google Drive File URL": "1tTwkdj3qDclHwIvRp1XC5KZkRQCracI_"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N3",
+    "Vendor": "TCC",
+    "Structure Type": "2-Leg",
+    "Structure Code": "N3-G2L-Soil.pdf",
+    "Material Code": "81301500215",
+    "Google Drive File URL": "1ibM_LgVADpHWjnzmO7fzMPoARNBZ7BJS"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N3",
+    "Vendor": "TCC",
+    "Structure Type": "1-Layer (L-Leg)",
+    "Structure Code": "N3-T1-L.pdf",
+    "Material Code": "81301500177",
+    "Google Drive File URL": "1HmjIT1rcuDkYsRYeMqx51qCKnFsJOKe-"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N3",
+    "Vendor": "TCC",
+    "Structure Type": "1-Layer (Pipe-Leg)",
+    "Structure Code": "N3-T1-P.pdf",
+    "Material Code": "81301500233",
+    "Google Drive File URL": "15h-MPpmVXEnJYnqkqoR_eFYFgZ33zf_j"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N3",
+    "Vendor": "TCC",
+    "Structure Type": "2-Layer 4+2 (L-Leg)",
+    "Structure Code": "N3-T2-L.pdf",
+    "Material Code": "81301500236",
+    "Google Drive File URL": "1fgjfoJghOl51nQacxox1dTYdpNo_Typh"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N3",
+    "Vendor": "TCC",
+    "Structure Type": "2-Layer 4+2 (Pipe Leg)",
+    "Structure Code": "N3-T2-P.pdf",
+    "Material Code": "81301500231",
+    "Google Drive File URL": "1H_DunUA-m0ENGxK8WLnlRNEjZNLz3u9-"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N3",
+    "Vendor": "TCC",
+    "Structure Type": "2-Layer 4+2 (L-Leg)",
+    "Structure Code": "N3-T2-L-SHADING OPTION.pdf",
+    "Material Code": "0",
+    "Google Drive File URL": "18710iEOgil3FIfzFvPQIWnHnAFG_qsGU"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N3",
+    "Vendor": "TCC",
+    "Structure Type": "2-Layer 4+2 (Pipe Leg)",
+    "Structure Code": "N3-T2-P-SHADING OPTION.pdf",
+    "Material Code": "0",
+    "Google Drive File URL": "1SSFbs4_ulLM1_q7oAYhvUfHuco5cRkDd"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N3",
+    "Vendor": "TCC",
+    "Structure Type": "Container",
+    "Structure Code": "N3-CR-Corner Box.pdf",
+    "Material Code": "81301500227",
+    "Google Drive File URL": "1wJOAvT3n-jqpkqSsKceDF4raldMf4P4f"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N3",
+    "Vendor": "TCC",
+    "Structure Type": "Container",
+    "Structure Code": "N3-CR-Transfer Beam.pdf",
+    "Material Code": "81301500226",
+    "Google Drive File URL": "1-dymiGJvQVPzjU0UtoDy_KkiufTqC0Z7"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N4",
+    "Vendor": "TCC",
+    "Structure Type": "2-Leg",
+    "Structure Code": "N4-G2L-Soil.pdf",
+    "Material Code": "81301500229",
+    "Google Drive File URL": "1ztjmLgFTRjQPj9dJknwyWGuIU8M6dlSM"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N4",
+    "Vendor": "TCC",
+    "Structure Type": "2-Leg",
+    "Structure Code": "N4-G2L-Slab.pdf",
+    "Material Code": "81301500254",
+    "Google Drive File URL": "1dXmQvqHc7Bejnl3JNBMf0ez8bQsa2kbL"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N4",
+    "Vendor": "TCC",
+    "Structure Type": "4-Leg",
+    "Structure Code": "N4-G4L-Soil.pdf",
+    "Material Code": "81301500251",
+    "Google Drive File URL": "1INdXKWDsDH1p9AewSJ3DABzws93eniqE"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N4",
+    "Vendor": "TCC",
+    "Structure Type": "2-Layer 6+2 (L-Leg)",
+    "Structure Code": "N4-T2-L.pdf",
+    "Material Code": "81301500186",
+    "Google Drive File URL": "1gnEgGECb0R7WznIzNeqI6dN0ESnjQnYr"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N4",
+    "Vendor": "TCC",
+    "Structure Type": "2-Layer 6+2 (Pipe Leg)",
+    "Structure Code": "N4-T2-P.pdf",
+    "Material Code": "81301500189",
+    "Google Drive File URL": "15TiS1yPxSZNFqaIWMgae5BCviDG7Llee"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N4",
+    "Vendor": "TCC",
+    "Structure Type": "Container",
+    "Structure Code": "N4-CR-2.6-Corner Box.pdf",
+    "Material Code": "81301500224",
+    "Google Drive File URL": "1EENm8MMHM8_HrQnHSgmqWZV6cGYV0Zag"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N4",
+    "Vendor": "TCC",
+    "Structure Type": "Container",
+    "Structure Code": "N4-CR-3.0-Corner Box.pdf",
+    "Material Code": "81301500222",
+    "Google Drive File URL": "1ZddKLBbBh7UmDWt2dYKO3Zo34EfjfkjA"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N4",
+    "Vendor": "TCC",
+    "Structure Type": "Container",
+    "Structure Code": "N4-CR-2.6-Transfer Beam.pdf",
+    "Material Code": "81301500223",
+    "Google Drive File URL": "1GYbRiMWmgrqDBBPZhZFqbKEWUrfotqE0"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N4",
+    "Vendor": "TCC",
+    "Structure Type": "Container",
+    "Structure Code": "N4-CR-3.0-Transfer Beam.pdf",
+    "Material Code": "81301500221",
+    "Google Drive File URL": "18gXq9bgZWc1dqlz3g07XExene2eEw5ZN"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "R1",
+    "Vendor": "TCC",
+    "Structure Type": "Roof 6 PV",
+    "Structure Code": "R1-R4L.pdf",
+    "Material Code": "81301500198",
+    "Google Drive File URL": "17uc7FGzU812YWKBrzR-k38yQi89V8ey9"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "R2",
+    "Vendor": "TCC",
+    "Structure Type": "Roof 8 PV",
+    "Structure Code": "R2-R4L.pdf",
+    "Material Code": "81301500197",
+    "Google Drive File URL": "1quLPmVfCMFXIygBXsuspxJqTDngm83IJ"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "R3",
+    "Vendor": "TCC",
+    "Structure Type": "Roof 10 PV",
+    "Structure Code": "R3-R6L.pdf",
+    "Material Code": "81301500195",
+    "Google Drive File URL": "1XT-1ie2Bro5G2fCnBTmlizTIadux7T5E"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "R2",
+    "Vendor": "TCC",
+    "Structure Type": "Roof 8 PV",
+    "Structure Code": "R2-R4L-H.pdf",
+    "Material Code": "81301500247",
+    "Google Drive File URL": "1ngdzMz6BcW1MMXfynPFkyChxdYwAHDiY"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "R3",
+    "Vendor": "TCC",
+    "Structure Type": "Roof 10 PV",
+    "Structure Code": "R3-R6L-H.pdf",
+    "Material Code": "81301500252",
+    "Google Drive File URL": "19NbUX1wltKs0Jpt2movM_drNmzrY1rDP"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "R2PV",
+    "Vendor": "TCC",
+    "Structure Type": "Roof 2 PV",
+    "Structure Code": "R4L-2PV.pdf",
+    "Material Code": "81301500264",
+    "Google Drive File URL": "1Kwk1dKRCP2jtnuvbJUoA6NZHhlbgENl4"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "R2PV",
+    "Vendor": "TCC",
+    "Structure Type": "Roof 2 PV",
+    "Structure Code": "R4L-H-2PV.pdf",
+    "Material Code": "81301500259",
+    "Google Drive File URL": "1jSVyi5frJ849dqPCnPn-DU0a_YOKQqdM"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "R4PV",
+    "Vendor": "TCC",
+    "Structure Type": "Roof 4 PV",
+    "Structure Code": "R4L-4PV.pdf",
+    "Material Code": "81301500249",
+    "Google Drive File URL": "1iRnik834C4zCUZ6-_vXUHrfCbkLxzVcj"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "R4PV",
+    "Vendor": "TCC",
+    "Structure Type": "Roof 4 PV",
+    "Structure Code": "R4L-H-4PV.pdf",
+    "Material Code": "81301500248",
+    "Google Drive File URL": "1JN2mg2hgea-FZrA8nqb6BeaVpHqD2AyV"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "R3",
+    "Vendor": "TCC",
+    "Structure Type": "Container",
+    "Structure Code": "N5-CR-Corner Box.pdf",
+    "Material Code": "81301500228",
+    "Google Drive File URL": "1DULIu2hcmxgI0U5eZlR9jevf8jcHNt2r"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "R3",
+    "Vendor": "TCC",
+    "Structure Type": "Container",
+    "Structure Code": "N5-CR-Transfer Beam.pdf",
+    "Material Code": "81301500234",
+    "Google Drive File URL": "12XL8ptjhhgu1JPETPKiNCUAGEMAwvN2o"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E2",
+    "Vendor": "Interlink",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E2-G2L-C-ITEL-Soil.pdf",
+    "Material Code": "81301500243",
+    "Google Drive File URL": "17u5UvsqDH7wlvCy00e-ivejIGMsTDddN"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Interlink",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-C-ITEL-Slab.pdf",
+    "Material Code": "81301500164",
+    "Google Drive File URL": "1Hj6pWsxGwsxqfWiYylNT3PmTl0aQxAu2"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Interlink",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-C-ITEL-Soil.pdf",
+    "Material Code": "New request-1",
+    "Google Drive File URL": "1xXgFAPkNMxnCaOTLT__xt1neCiSgbsKd"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E2",
+    "Vendor": "Huawei 2020",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E2-G2L-HW-H3.0-Slab.pdf",
+    "Material Code": "New request-16",
+    "Google Drive File URL": "13WGzWcME9yEWNRgXBRcux33g3BNq4_Vv"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E2",
+    "Vendor": "Huawei 2020",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E2-G2L-HW-H3.0-Soil.pdf",
+    "Material Code": "81301500242",
+    "Google Drive File URL": "1AK-Fqgfcm7fHfAk1ikZ2ZpBhO9eG-rSD"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "M.R.V",
+    "Structure Type": "1-Layer",
+    "Structure Code": "E1-T1-L-MRV-1.pdf",
+    "Material Code": "81301500245",
+    "Google Drive File URL": "1bi3vbRiTYhBtAcBnaH8JcyBMQvHLftq-"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "M.R.V",
+    "Structure Type": "1-Layer",
+    "Structure Code": "E1-T1-L-MRV-2.pdf",
+    "Material Code": "81301500250",
+    "Google Drive File URL": "16IEbenyjp10vcTqVir_xX3UnIC_lQQkq"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "M.R.V",
+    "Structure Type": "1-Layer",
+    "Structure Code": "E1-T1-MRV-6PV_Ver.pdf",
+    "Material Code": "New request-12",
+    "Google Drive File URL": "-"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Petchtanjai",
+    "Structure Type": "4-Leg",
+    "Structure Code": "E1-G4L-Petchtanjai.pdf",
+    "Material Code": "123456789",
+    "Google Drive File URL": "1E3iM_fQdEkK-F5j8NdfkVghGY0hr7pCQ"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "A-Plus",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-C-Aplus-Soil.pdf",
+    "Material Code": "81301500255",
+    "Google Drive File URL": "11bpfI4rfF9_ccIsYiRFVHfkL4wvcZUPf"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "A-Plus",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E1-G2L-C-Aplus-Slab.pdf",
+    "Material Code": "81301500266",
+    "Google Drive File URL": "17X41Eeu8QM69lPLvgcYIGt4LEhBRjfh8"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E2",
+    "Vendor": "A-Plus",
+    "Structure Type": "2-Leg",
+    "Structure Code": "E2-G2L-C-Aplus-Soil.pdf",
+    "Material Code": "81301500265",
+    "Google Drive File URL": "1YtoEUUvgCLiQnIhOiMyvVcGWnrW9Saub"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N2",
+    "Vendor": "TCC",
+    "Structure Type": "1-Leg",
+    "Structure Code": "N2-G1L-Slab.pdf",
+    "Material Code": "81301500241",
+    "Google Drive File URL": "19sach7Bnb3Chij2_rrX5kC6n-Vbo8fNx"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N3",
+    "Vendor": "TCC",
+    "Structure Type": "1-Leg",
+    "Structure Code": "N3-G1L-Slab.pdf",
+    "Material Code": "81301500263",
+    "Google Drive File URL": "1TN8Y18S6wEhaX-oYxe4OcE9qDZiuuNvM"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "N3",
+    "Vendor": "TCC",
+    "Structure Type": "4-Leg",
+    "Structure Code": "N3-G4L-Soil.pdf",
+    "Material Code": "81301500246",
+    "Google Drive File URL": "1_T9K0nPW9owBG2k5fVnEgBceMj28aqnP"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "R1",
+    "Vendor": "TCC",
+    "Structure Type": "Roof 6 PV",
+    "Structure Code": "R1-R4L-H.pdf",
+    "Material Code": "81301500240",
+    "Google Drive File URL": "104ST2J54j7kbRuXOG_8zTRnz40P3F9jA"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Hatari/AAL",
+    "Structure Type": "4-Leg",
+    "Structure Code": "E1-G4L-H2.5-Hatari.pdf",
+    "Material Code": "81301500170",
+    "Google Drive File URL": "1uZ_nTiNFX39rNKRVxPdqRqJT_SIIK_9q"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "Hatari/AAL",
+    "Structure Type": "4-Leg",
+    "Structure Code": "E1-G4L-H3.5-Hatari.pdf",
+    "Material Code": "81301500172",
+    "Google Drive File URL": "1hXgsTqbUAUOYyo5Yk8-wW8Vebtc8XVQg"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "M.R.V",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-MRV-3PV-2PV.pdf",
+    "Material Code": "New request-6",
+    "Google Drive File URL": "1sg8m3KNgKqCz4Co1FKO82cwDcfJ7foWF"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "M.R.V",
+    "Structure Type": "1-Leg",
+    "Structure Code": "E1-G1L-MRV-3PV-4PV_Slab.pdf",
+    "Material Code": "New request-7",
+    "Google Drive File URL": "1c4h-9rUZDxBdG4tCUTKrZx0VOzHVcA5g"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "M.R.V",
+    "Structure Type": "1-Layer",
+    "Structure Code": "E1-T1-MRV-3PV-2PV.pdf",
+    "Material Code": "New request-10",
+    "Google Drive File URL": "1ZOqqwQj9gznpy9OClo2QmvMP7H9L79Nx"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "M.R.V",
+    "Structure Type": "1-Layer",
+    "Structure Code": "E1-T1-MRV-3PV-4PV.pdf",
+    "Material Code": "New request-11",
+    "Google Drive File URL": "1D0fPzrHWduR11PsbIv2Bw0xtQNsKDbNH"
+  }
+];
