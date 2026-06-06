@@ -139,8 +139,8 @@ function renderFavoritesList() {
 }
 
 function renderSkeletonLoader() {
-    if (!catOptionsList) return;
-    catOptionsList.innerHTML = '';
+    if (!vendorOptionsList) return;
+    vendorOptionsList.innerHTML = '';
     for (let i = 0; i < 6; i++) {
         const skeleton = document.createElement('div');
         skeleton.className = 'skeleton-card';
@@ -151,7 +151,7 @@ function renderSkeletonLoader() {
                 <div class="skeleton-text-2"></div>
             </div>
         `;
-        catOptionsList.appendChild(skeleton);
+        vendorOptionsList.appendChild(skeleton);
     }
 }
 
@@ -446,8 +446,8 @@ function updateStepIndicators() {
         stepTab3.className = 'wizard-step disabled';
         stepTab4.className = 'wizard-step disabled';
         
-        selectedCatLbl.textContent = 'Not Selected';
         selectedVendorLbl.textContent = 'Not Selected';
+        selectedCatLbl.textContent = 'Not Selected';
         selectedTypeLbl.textContent = 'Not Selected';
         selectedCountLbl.textContent = '-';
     } 
@@ -458,8 +458,8 @@ function updateStepIndicators() {
         stepTab3.className = 'wizard-step disabled';
         stepTab4.className = 'wizard-step disabled';
 
-        selectedCatLbl.textContent = selectedCat;
-        selectedVendorLbl.textContent = 'Not Selected';
+        selectedVendorLbl.textContent = selectedVendor;
+        selectedCatLbl.textContent = 'Not Selected';
         selectedTypeLbl.textContent = 'Not Selected';
         selectedCountLbl.textContent = '-';
     } 
@@ -470,8 +470,8 @@ function updateStepIndicators() {
         stepTab3.className = 'wizard-step active';
         stepTab4.className = 'wizard-step disabled';
 
-        selectedCatLbl.textContent = selectedCat;
         selectedVendorLbl.textContent = selectedVendor;
+        selectedCatLbl.textContent = selectedCat;
         selectedTypeLbl.textContent = 'Not Selected';
         selectedCountLbl.textContent = '-';
     } 
@@ -482,8 +482,8 @@ function updateStepIndicators() {
         stepTab3.className = 'wizard-step completed';
         stepTab4.className = 'wizard-step active';
 
-        selectedCatLbl.textContent = selectedCat;
         selectedVendorLbl.textContent = selectedVendor;
+        selectedCatLbl.textContent = selectedCat;
         selectedTypeLbl.textContent = selectedType;
     }
 }
@@ -500,9 +500,9 @@ function resetWizard() {
 // STEP RENDERERS (WIZARD FLOW)
 // ==========================================
 
-// Step 1: Main Category Cards
+// Step 1: Vendor List Cards
 function renderStep1() {
-    catOptionsList.innerHTML = '';
+    vendorOptionsList.innerHTML = '';
     
     // Virtual Category Card: Favorites
     const isFavoritesSelected = selectedCat === '⭐ Favorites';
@@ -518,11 +518,49 @@ function renderStep1() {
     favCard.addEventListener('click', () => {
         showFavoritesFlow();
     });
-    catOptionsList.appendChild(favCard);
+    vendorOptionsList.appendChild(favCard);
     
-    // Count drawings for each category
-    const catCounts = {};
+    // Count drawings for each Vendor
+    const vendorCounts = {};
     DRAWING_DATA.forEach(item => {
+        const vendor = item['Vendor'];
+        if (vendor) {
+            vendorCounts[vendor] = (vendorCounts[vendor] || 0) + 1;
+        }
+    });
+
+    const sortedVendors = Object.keys(vendorCounts).sort();
+
+    sortedVendors.forEach(vendor => {
+        const isSelected = selectedVendor === vendor;
+        const card = document.createElement('div');
+        card.className = `option-card ${isSelected ? 'selected' : ''}`;
+        
+        card.innerHTML = `
+            <div class="option-card-icon" style="color: var(--accent-teal);"><i class="fa-solid fa-industry"></i></div>
+            <div class="option-card-info">
+                <div class="option-card-label">${vendor}</div>
+                <div class="option-card-count">${vendorCounts[vendor]} Drawings</div>
+            </div>
+        `;
+
+        card.addEventListener('click', () => {
+            selectedVendor = vendor;
+            goToStep(2);
+        });
+
+        vendorOptionsList.appendChild(card);
+    });
+}
+
+// Step 2: Main Category Cards
+function renderStep2() {
+    catOptionsList.innerHTML = '';
+    
+    const filteredByVendor = DRAWING_DATA.filter(item => item['Vendor'] === selectedVendor);
+    
+    const catCounts = {};
+    filteredByVendor.forEach(item => {
         const cat = item['หมวดหมู่หลัก (Main Cat)'];
         if (cat) {
             catCounts[cat] = (catCounts[cat] || 0) + 1;
@@ -556,48 +594,10 @@ function renderStep1() {
 
         card.addEventListener('click', () => {
             selectedCat = cat;
-            goToStep(2);
-        });
-
-        catOptionsList.appendChild(card);
-    });
-}
-
-// Step 2: Vendor List Cards
-function renderStep2() {
-    vendorOptionsList.innerHTML = '';
-    
-    const filteredByCat = DRAWING_DATA.filter(item => item['หมวดหมู่หลัก (Main Cat)'] === selectedCat);
-    
-    const vendorCounts = {};
-    filteredByCat.forEach(item => {
-        const vendor = item['Vendor'];
-        if (vendor) {
-            vendorCounts[vendor] = (vendorCounts[vendor] || 0) + 1;
-        }
-    });
-
-    const sortedVendors = Object.keys(vendorCounts).sort();
-
-    sortedVendors.forEach(vendor => {
-        const isSelected = selectedVendor === vendor;
-        const card = document.createElement('div');
-        card.className = `option-card ${isSelected ? 'selected' : ''}`;
-        
-        card.innerHTML = `
-            <div class="option-card-icon" style="color: var(--accent-teal);"><i class="fa-solid fa-industry"></i></div>
-            <div class="option-card-info">
-                <div class="option-card-label">${vendor}</div>
-                <div class="option-card-count">${vendorCounts[vendor]} Drawings</div>
-            </div>
-        `;
-
-        card.addEventListener('click', () => {
-            selectedVendor = vendor;
             goToStep(3);
         });
 
-        vendorOptionsList.appendChild(card);
+        catOptionsList.appendChild(card);
     });
 }
 

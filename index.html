@@ -99,8 +99,8 @@
                         <i class="fa-solid fa-circle-check completed-icon"></i>
                     </div>
                     <div class="step-info">
-                        <span class="step-title">Category</span>
-                        <span class="step-selected-val" id="selected-cat-lbl">Not Selected</span>
+                        <span class="step-title">Vendor</span>
+                        <span class="step-selected-val" id="selected-vendor-lbl">Not Selected</span>
                     </div>
                 </div>
                 <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
@@ -110,8 +110,8 @@
                         <i class="fa-solid fa-circle-check completed-icon"></i>
                     </div>
                     <div class="step-info">
-                        <span class="step-title">Vendor</span>
-                        <span class="step-selected-val" id="selected-vendor-lbl">Not Selected</span>
+                        <span class="step-title">Category</span>
+                        <span class="step-selected-val" id="selected-cat-lbl">Not Selected</span>
                     </div>
                 </div>
                 <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
@@ -142,24 +142,24 @@
             <div class="wizard-body">
                 <div class="wizard-step-panel" id="panel-step-1">
                     <div class="panel-header">
-                        <h2><i class="fa-solid fa-folder-tree"></i> Step 1: Select Main Category</h2>
-                        <p>Select a category below or search in the bar above</p>
+                        <h2><i class="fa-solid fa-industry"></i> Step 1: Select Vendor</h2>
+                        <p>Select a vendor below or search in the bar above</p>
                     </div>
-                    <div class="option-grid" id="cat-options-list">
-                        <!-- Dynamic categories pills cards -->
+                    <div class="option-grid" id="vendor-options-list">
+                        <!-- Dynamic vendors list -->
                     </div>
                 </div>
 
                 <div class="wizard-step-panel" id="panel-step-2" style="display: none;">
                     <div class="panel-header">
                         <div class="panel-header-title">
-                            <h2><i class="fa-solid fa-industry"></i> Step 2: Select Vendor</h2>
+                            <h2><i class="fa-solid fa-folder-tree"></i> Step 2: Select Main Category</h2>
                             <button class="back-btn" data-back-to="1"><i class="fa-solid fa-arrow-left"></i> Back</button>
                         </div>
-                        <p>Showing vendors matching the selected category</p>
+                        <p>Showing categories matching the selected vendor</p>
                     </div>
-                    <div class="option-grid" id="vendor-options-list">
-                        <!-- Dynamic vendors list -->
+                    <div class="option-grid" id="cat-options-list">
+                        <!-- Dynamic categories pills cards -->
                     </div>
                 </div>
 
