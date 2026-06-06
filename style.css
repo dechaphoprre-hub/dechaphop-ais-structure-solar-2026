@@ -608,8 +608,11 @@ body.modal-open {
 
 .step-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.35rem;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .step-title {
@@ -619,14 +622,19 @@ body.modal-open {
     color: var(--text-secondary);
 }
 
+.step-title::after {
+    content: ':';
+    opacity: 0.5;
+}
+
 .step-selected-val {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     color: var(--text-muted);
     font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 130px;
+    max-width: 120px;
 }
 
 .wizard-step.completed .step-selected-val {
