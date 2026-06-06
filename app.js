@@ -511,7 +511,7 @@ function renderStep1() {
     favCard.innerHTML = `
         <div class="option-card-icon"><i class="fa-regular fa-star"></i></div>
         <div class="option-card-info">
-            <div class="option-card-label">⭐ Favorites</div>
+            <div class="option-card-label">Favorites</div>
             <div class="option-card-count">${favoriteDrawings.length} Saved</div>
         </div>
     `;
