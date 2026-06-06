@@ -509,7 +509,7 @@ function renderStep1() {
     const favCard = document.createElement('div');
     favCard.className = `option-card favorites-card ${isFavoritesSelected ? 'selected' : ''}`;
     favCard.innerHTML = `
-        <div class="option-card-icon"><i class="fa-solid fa-star"></i></div>
+        <div class="option-card-icon"><i class="fa-regular fa-star"></i></div>
         <div class="option-card-info">
             <div class="option-card-label">⭐ Favorites</div>
             <div class="option-card-count">${favoriteDrawings.length} Saved</div>
@@ -537,7 +537,7 @@ function renderStep1() {
         card.className = `option-card ${isSelected ? 'selected' : ''}`;
         
         card.innerHTML = `
-            <div class="option-card-icon" style="color: var(--accent-teal);"><i class="fa-solid fa-industry"></i></div>
+            <div class="option-card-icon" style="color: var(--accent-teal);"><i class="fa-regular fa-building"></i></div>
             <div class="option-card-info">
                 <div class="option-card-label">${vendor}</div>
                 <div class="option-card-count">${vendorCounts[vendor]} Drawings</div>
@@ -575,13 +575,13 @@ function renderStep2() {
         card.className = `option-card cat-card ${isSelected ? 'selected' : ''}`;
         card.setAttribute('data-cat', cat);
         
-        let iconClass = 'fa-solid fa-folder-open';
+        let iconClass = 'fa-regular fa-folder';
         if (cat.startsWith('E')) {
-            iconClass = 'fa-solid fa-solar-panel';
+            iconClass = 'fa-regular fa-sun';
         } else if (cat.startsWith('N')) {
-            iconClass = 'fa-solid fa-server';
+            iconClass = 'fa-regular fa-hard-drive';
         } else if (cat.startsWith('R')) {
-            iconClass = 'fa-solid fa-house-chimney-window';
+            iconClass = 'fa-regular fa-house';
         }
         
         card.innerHTML = `
@@ -626,7 +626,7 @@ function renderStep3() {
         card.className = `option-card ${isSelected ? 'selected' : ''}`;
         
         card.innerHTML = `
-            <div class="option-card-icon" style="color: #a2d2ff;"><i class="fa-solid fa-cubes"></i></div>
+            <div class="option-card-icon" style="color: #a2d2ff;"><i class="fa-solid fa-cube"></i></div>
             <div class="option-card-info">
                 <div class="option-card-label" style="font-size: 0.85rem;">${type}</div>
                 <div class="option-card-count">${typeCounts[type]} Drawings</div>

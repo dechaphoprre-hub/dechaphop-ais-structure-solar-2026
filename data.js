@@ -1,7 +1,7 @@
 // Auto-generated drawing list data
-// Generated on: 2026-06-03 18:49:11
+// Generated on: 2026-06-06 19:15:39
 
-const LAST_UPDATED = "2026-06-03 18:49:11";
+const LAST_UPDATED = "2026-06-06 19:15:39";
 
 const DRAWING_DATA = [
   {
@@ -675,5 +675,13 @@ const DRAWING_DATA = [
     "Structure Code": "E1-T1-MRV-3PV-4PV.pdf",
     "Material Code": "New request-11",
     "Google Drive File URL": "1D0fPzrHWduR11PsbIv2Bw0xtQNsKDbNH"
+  },
+  {
+    "หมวดหมู่หลัก (Main Cat)": "E1",
+    "Vendor": "M.R.V",
+    "Structure Type": "2-Layer",
+    "Structure Code": "E1-T2-MRV-3+3PV-4+2PV.pdf",
+    "Material Code": "wait",
+    "Google Drive File URL": "10fbE1JY8tJsz04pcp7H09gpDyIaAUQlv"
   }
 ];

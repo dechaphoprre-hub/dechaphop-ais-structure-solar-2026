@@ -442,16 +442,12 @@ body.modal-open {
 }
 
 .stat-icon {
-    font-size: 1.45rem;
-    width: 42px;
-    height: 42px;
-    border-radius: 10px;
-    background: var(--surface-tint);
+    font-size: 1.35rem;
+    color: var(--text-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--theme-accent);
-    border: 1px solid var(--border-color);
+    opacity: 0.85;
 }
 
 #stat-categories .stat-icon { color: var(--accent-teal); }
@@ -788,17 +784,18 @@ body.modal-open {
 }
 
 .option-card-icon {
-    font-size: 1.25rem;
-    color: var(--theme-accent);
+    font-size: 1.15rem;
+    color: var(--text-muted);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--surface-tint);
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    width: 36px;
-    height: 36px;
     flex-shrink: 0;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.option-card:hover .option-card-icon {
+    color: var(--theme-accent);
+    transform: scale(1.1);
 }
 
 .option-card-info {
