@@ -404,8 +404,12 @@ function applyTheme(theme) {
     });
 }
 
+let previousStep = 1;
+
 // Flow step controller
 function goToStep(step) {
+    const isForward = step > previousStep;
+    previousStep = step;
     activeStep = step;
     
     // Hide all panels
@@ -415,23 +419,34 @@ function goToStep(step) {
     panelStep4.style.display = 'none';
     noResults.style.display = 'none';
 
+    let activePanel;
     // Hide/Show specific panel
     if (step === 1) {
         panelStep1.style.display = 'flex';
+        activePanel = panelStep1;
         renderStep1();
     } else if (step === 2) {
         panelStep2.style.display = 'flex';
+        activePanel = panelStep2;
         renderStep2();
     } else if (step === 3) {
         panelStep3.style.display = 'flex';
+        activePanel = panelStep3;
         renderStep3();
     } else if (step === 4) {
         panelStep4.style.display = 'flex';
+        activePanel = panelStep4;
         if (selectedCat === '⭐ Favorites') {
             renderFavoritesList();
         } else {
             renderStep4();
         }
+    }
+
+    if (activePanel) {
+        activePanel.classList.remove('slide-in-right', 'slide-in-left');
+        void activePanel.offsetWidth; // Trigger reflow to restart CSS animation
+        activePanel.classList.add(isForward ? 'slide-in-right' : 'slide-in-left');
     }
 
     updateStepIndicators();

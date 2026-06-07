@@ -1630,3 +1630,85 @@ body.modal-open {
     color: #ffb703;
 }
 
+/* Horizontal slide animations for steps panels */
+.slide-in-right {
+    animation: slideInRight 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile App View Optimization (Screens <= 768px) */
+@media (max-width: 768px) {
+    /* Hide the stats board completely on mobile steps to save valuable vertical height */
+    .stats-dashboard {
+        display: none !important;
+    }
+    
+    /* Shrink padding and sizes of App Header to prevent scrolling */
+    .app-header {
+        padding: 0.5rem 0.75rem !important;
+    }
+    .logo-img {
+        height: 28px !important;
+        margin-right: 0.35rem !important;
+    }
+    .logo-text h1 {
+        font-size: 1.05rem !important;
+    }
+    .logo-text span {
+        font-size: 0.65rem !important;
+    }
+    .header-right {
+        gap: 0.65rem !important;
+    }
+    .theme-switcher-panel {
+        padding: 0.2rem 0.45rem !important;
+        border-radius: 20px !important;
+    }
+    .switcher-label {
+        display: none !important; /* Hide "Theme:" text to save horizontal space */
+    }
+    
+    /* Keep wizard layout compact */
+    .wizard-steps-header {
+        padding: 0.45rem 0.65rem !important;
+    }
+    .wizard-step {
+        padding: 0.35rem 0.55rem !important;
+        min-width: 130px !important;
+    }
+    
+    /* Reduce body padding so content fits beautifully */
+    .app-container {
+        padding: 0.5rem !important;
+        gap: 0.6rem !important;
+    }
+    .wizard-body {
+        padding: 0.85rem !important;
+    }
+}
+
