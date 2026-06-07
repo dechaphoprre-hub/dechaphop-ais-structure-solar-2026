@@ -716,19 +716,29 @@ function clearDirectSearch() {
 function openDrawingPreview(driveId, code, materialCode) {
     if (!driveId) return;
     
-    // Set title and details
-    modalDrawingTitle.textContent = code;
-    modalMaterialTitle.textContent = `Material Code: ${materialCode !== '-' ? materialCode : 'N/A'}`;
-    
     // Google Drive file preview URL
     const embedUrl = `https://drive.google.com/file/d/${driveId}/preview`;
     
-    // Load embed in iframe
-    pdfIframe.src = embedUrl;
-    
-    // Show Modal with animation classes
-    pdfModal.classList.add('show');
-    document.body.classList.add('modal-open');
+    // Detect mobile/tablet screen size or user agent
+    const isMobileOrTablet = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+        || (window.innerWidth <= 1024);
+        
+    if (isMobileOrTablet) {
+        // Open Google Drive preview in a new window/tab directly for best UX on mobile (pinch-to-zoom, native view)
+        window.open(embedUrl, '_blank');
+        showToast('Opening preview in new tab...');
+    } else {
+        // Set title and details
+        modalDrawingTitle.textContent = code;
+        modalMaterialTitle.textContent = `Material Code: ${materialCode !== '-' ? materialCode : 'N/A'}`;
+        
+        // Load embed in iframe
+        pdfIframe.src = embedUrl;
+        
+        // Show Modal with animation classes
+        pdfModal.classList.add('show');
+        document.body.classList.add('modal-open');
+    }
 }
 
 function closeModal() {
